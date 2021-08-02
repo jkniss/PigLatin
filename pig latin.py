@@ -9,7 +9,7 @@ word = input("Enter a english word: ")
 sLetter = word[:1].lower()
 
 #If/else statements
-if "a" or "e" or "i" or "o" or "u" in sLetter:
+if sLetter in ('a', 'e', 'i', 'o', 'u'):
     newWord = word + "way" 
 else:
     newWord = word[1:] + sLetter + "ay"
