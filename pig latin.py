@@ -9,9 +9,9 @@ word = input("Enter a english word: ")
 sLetter = word[:1].lower()
 
 #If/else statements
-if sLetter == "a" or "e" or "i" or "o" or "u":
-    newWord = word[1:] + sLetter + "ay"
+if sLetter == "a" or sLetter == "e" or sLetter == "i" or sLetter == "o" or sLetter == "u":
+    newWord = word + "way" 
 else:
-    newWord = word[1:] + "way"
+    newWord = word[1:] + sLetter + "ay"
 
 print(word + " in pig latin is " + newWord)
